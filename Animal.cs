@@ -5,6 +5,12 @@ namespace Zoolandia
 
     public class Animal
     {
+        //animal constructor
+        public Animal(string name)
+        {
+            this.Name =name;
+        }
+
         // public string Name{get;set;}
         private string _name= "Pikachu";
         public string Name{

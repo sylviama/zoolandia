@@ -1,10 +1,14 @@
 using System;
 
-namespace Zoolandia
+namespace Zoolandia.Species
 {
 
     public class AilurusFulgens : Animal
     {
+        public AilurusFulgens(string name): base(name)
+        {
+            
+        }
         public override string Eat(int numberOfFoodz)
         {
             string animalEat = base.Eat(3);//parent's
