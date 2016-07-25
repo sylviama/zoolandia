@@ -5,7 +5,7 @@ namespace Zoolandia.Species
 
     public class AilurusFulgens : Animal
     {
-        public AilurusFulgens(string name): base(name)
+        public AilurusFulgens(string name): base (name)
         {
             
         }

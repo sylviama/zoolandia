@@ -12,7 +12,7 @@ namespace Zoolandia
         }
 
         // public string Name{get;set;}
-        private string _name= "Pikachu";
+        private string _name= "animal";
         public string Name{
             get{return _name;}
             set{_name=value;}
@@ -21,6 +21,11 @@ namespace Zoolandia
         public virtual string Eat(int numberOfFoodz)
         {
             return "Yum!";
+        }
+
+        public virtual int CutenessLevel()
+        {
+            return 4;
         }
     }
 }
