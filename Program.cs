@@ -1,5 +1,7 @@
 ﻿using System;
 using Zoolandia.Species;
+using Zoolandia.Habitat;
+using System.Collections.Generic;
 
 namespace Zoolandia
 {
@@ -31,8 +33,35 @@ namespace Zoolandia
             Console.WriteLine(sylviaKakuna.Noise());
 
             //Eevee
-            Eevee sylvisEevee= new Eevee("Eve");
-            Console.WriteLine(sylvisEevee.level());
+            Eevee sylviaEevee= new Eevee("Eve");
+            Console.WriteLine(sylviaEevee.level());
+
+
+
+            //Habitat
+            Jungle my_jungle = new Jungle("my jungle");
+            Ocean my_ocean = new Ocean("my ocean");
+
+            //Jungle Animals
+            my_jungle.inhabitants.Add(sylviaEevee);
+            my_jungle.inhabitants.Add(sylviaKakuna);
+
+            Console.WriteLine("Jungle Animals are: ");
+            foreach(var jungle in my_jungle.inhabitants)
+            {
+                Console.WriteLine(jungle.Name);
+            }
+
+            //Ocean Animals
+            my_ocean.inhabitants.Add(sylviasPika);
+            my_ocean.inhabitants.Add(red_panda);
+
+            Console.WriteLine ("Ocean Animals are: ");
+            foreach (var ocean in my_ocean.inhabitants)
+            {
+                Console.WriteLine(ocean.Name);
+            }
+            
             
         }
     }
